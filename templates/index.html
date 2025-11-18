@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuze Li - Resume</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <h1>Yuze Li</h1>
+      <p class="hero__contact">587-937-4669 | <a href="mailto:yuze4@ualberta.ca">yuze4@ualberta.ca</a> | Richmond, BC</p>
+      <p class="hero__tag">Data-driven technologist with strong communication, coordination, and problem-solving skills.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Profile</h2>
+      <ul>
+        <li>Excellent communication, coordination, and problem-solving abilities backed by practical experience.</li>
+        <li>Proficient with Python and C.</li>
+        <li>Data-driven mindset with a strong foundation in analytics and computer science.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <div class="card__title">Northeastern University — Vancouver, BC, Canada</div>
+        <div class="card__meta">Master of Science in Data Analytics Engineering | Sep 2023 – Dec 2024</div>
+        <p class="card__detail">Relevant Courses: Computation and Visualization, Data Mining in Engineering, Applied Reinforcement Learning</p>
+      </div>
+      <div class="card">
+        <div class="card__title">University of Alberta — AB, Canada</div>
+        <div class="card__meta">Bachelor of Science in Computer Science (Minor in Mathematics) | Sep 2018 – Apr 2023</div>
+        <p class="card__detail">Relevant Courses: Intelligent Systems, Games, Puzzles, and Algorithms, 3D Modelling and Animation, Search, Knowledge, Simulation, Intermediate Calculus II, Statistics II, Linear Algebra I, Formal Systems and Logic</p>
+      </div>
+      <div class="card">
+        <div class="card__title">China Foreign Affairs University — Beijing, China</div>
+        <div class="card__meta">International Partnership Program</div>
+        <p class="card__detail">Relevant Courses: Communication Studies, Chinese Culture, Diplomacy of Contemporary China</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="card">
+        <div class="card__title">Computer Engineer Intern — Longsea Technology Co., Ltd., Hunan New Longsea Group Corporation, Hunan, China</div>
+        <ul>
+          <li>Maintained network systems across 12 subsidiaries, enhancing internal communication for 300+ employees.</li>
+          <li>Supported adoption of an electronic service card used in real estate projects spanning seven communities (1.2 million m²) with 20,000+ users.</li>
+          <li>Collaborated with technical staff to resolve hardware and software issues, strengthening system integration insight.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__title">Furong Sub-branch, Agricultural Bank of China — Changsha, Hunan, China</div>
+        <ul>
+          <li>Assisted with deposit and loan services, adding 20 new loan customers.</li>
+          <li>Partnered with teams to analyze data, business, and functional requirements.</li>
+          <li>Reviewed performance metrics and implemented action plans to close service gaps.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project Experience</h2>
+      <div class="card">
+        <div class="card__title">Analysis of LeetCode Weekly Contest Performance Using Regression Models (Sep – Dec 2023)</div>
+        <ul>
+          <li>Compiled weekly contest datasets with rankings, ratings, and completion times; explored distributions and trends through visualizations.</li>
+          <li>Built Linear, Lasso, and Ridge Regression models to predict performance; applied regularization to reduce overfitting.</li>
+          <li>Evaluated models with MAE, MSE, and R² scores to benchmark predictive accuracy.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__title">Credit Reporting Sector Complaint Analysis (Sep – Dec 2023)</div>
+        <ul>
+          <li>Analyzed dissatisfaction trends for Equifax, Experian, and TransUnion using CFPB complaint data and socio-demographic factors.</li>
+          <li>Built geographic maps and interactive dashboards comparing complaints from 2017–2023.</li>
+          <li>Calculated Complaint Resolve Rate and disputed case counts to assess operational effectiveness.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__title">Python-Based China Stock Quantitative Trading (Jan – May 2022)</div>
+        <ul>
+          <li>Performed market analysis, visualized trends, and applied random forests, logistic regression, and LSTM models for trading.</li>
+          <li>Implemented technical indicator calculators with TA-lib and Pandas for portfolio labeling.</li>
+          <li>Developed train-validation analysis modules using Seaborn and Matplotlib.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__title">Go Game Development Project (Sep – Dec 2021)</div>
+        <ul>
+          <li>Created a graphical Go game with PyGame, including detailed board elements.</li>
+          <li>Used NumPy to draw precise grid lines and position pieces.</li>
+          <li>Optimized accuracy and efficiency, ranking in the top 20% for performance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="comments">
+      <h2>Leave a Comment</h2>
+      <form id="comment-form" class="comment-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name (optional)">
+
+        <label for="message">Message<span class="required">*</span></label>
+        <textarea id="message" name="message" rows="4" placeholder="Share your thoughts" required></textarea>
+
+        <button type="submit">Post Comment</button>
+        <p id="form-feedback" class="feedback" role="status"></p>
+      </form>
+
+      <div id="comments-list" class="comments__list">
+        <p class="muted" id="no-comments">No comments yet. Be the first to share your thoughts!</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
