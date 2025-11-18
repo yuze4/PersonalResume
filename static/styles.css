@@ -70,6 +70,32 @@ h2 {
   letter-spacing: 0.02em;
 }
 
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+
+.section-nav__button {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--text);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+}
+
+.section-nav__button:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+}
+
 ul {
   padding-left: 18px;
   margin: 8px 0 0;
