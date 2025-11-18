@@ -20,12 +20,12 @@ Build the image:
 docker build -t personal-resume .
 ```
 
-Run the container with a host-mounted data directory to persist comments:
+Run the container with a host-mounted data directory to persist comments (for example, mapping `/var/data` on the host to the container):
 ```bash
-docker run -p 8000:8000 -v $(pwd)/data:/var/data personal-resume
+docker run -p 8000:8000 -v /var/data:/var/data personal-resume
 ```
 
-Your comments will be saved to `$(pwd)/data/comments.json` on the host.
+Your comments will be saved to `/var/data/comments.json` on both the host and inside the container.
 
 ## Project structure
 - `app.py`: Flask app serving the resume page and comment API.
